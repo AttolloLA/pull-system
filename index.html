@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P.U.L.L. Sistem | Generator Promotivnog Sadržaja</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f3f4f6; }
+        .gradient-text { background: linear-gradient(135deg, #1f2937 0%, #4b5563 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); }
+        .input-focus { transition: all 0.2s; border: 2px solid transparent; }
+        .input-focus:focus { border-color: #3b82f6; box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1); outline: none; }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+        .checkbox-wrapper input:checked + div { background-color: #10b981; border-color: #10b981; }
+        .checkbox-wrapper input:checked + div svg { display: block; }
+        .level-card { transition: all 0.3s; opacity: 0.6; filter: grayscale(0.8); }
+        .level-card.active { opacity: 1; filter: grayscale(0); transform: scale(1.02); box-shadow: 0 0 20px rgba(59, 130, 246, 0.2); }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        .animate-fade-in { animation: fadeIn 0.5s ease-out forwards; }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center">
+                    <i class="fas fa-magnet text-blue-600 text-2xl mr-3"></i>
+                    <span class="font-bold text-xl tracking-tight text-gray-900">P.U.L.L. <span class="text-blue-600">SISTEM</span></span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#levels" class="text-gray-600 hover:text-blue-600 transition">Nivoi</a>
+                    <a href="#formula" class="text-gray-600 hover:text-blue-600 transition">Formula</a>
+                    <a href="#generator" class="text-gray-600 hover:text-blue-600 transition">Generator</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="relative bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <div class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32 pt-20 px-4 sm:px-6 lg:px-8">
+                <main class="mt-10 mx-auto max-w-7xl sm:mt-12 md:mt-16 lg:mt-20 xl:mt-28">
+                    <div class="sm:text-center lg:text-left">
+                        <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
+                            <span class="block xl:inline">Prestanite</span>
+                            <span class="block text-blue-600 xl:inline">Obavještavati.</span>
+                            <span class="block text-3xl mt-2 text-gray-500 font-medium">Počnite Promovirati.</span>
+                        </h1>
+                        <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+                            Prestani biti kalendar. Postani netko tko stvara emocije. Koristi P.U.L.L. metodu da napišeš objave koje ljudi ne mogu ignorisati.
+                        </p>
+                        <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+                            <div class="rounded-md shadow">
+                                <a href="#generator" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:py-4 md:text-lg transition">
+                                    Pokreni Generator
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+        <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 bg-gray-50 flex items-center justify-center">
+            <div class="p-10 text-center">
+                <div class="text-9xl font-black text-gray-200 select-none">P.U.L.L.</div>
+                <div class="mt-4 flex justify-center space-x-4 text-sm font-semibold text-gray-400">
+                    <span>Personal</span><span>•</span>
+                    <span>Urgency</span><span>•</span>
+                    <span>Legitimize</span><span>•</span>
+                    <span>Link</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="levels" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-base text-blue-600 font-semibold tracking-wide uppercase">Evolucija Sadržaja</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">3 Nivoa na Prvi Pogled</p>
+                <p class="mt-4 max-w-2xl text-xl text-gray-500 mx-auto">Kliknite na nivo da vidite razliku između obavještenja i promocije.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="level-card bg-white rounded-2xl shadow-lg p-8 border-t-4 border-red-500 cursor-pointer" onclick="setActiveLevel(1)">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-xl font-bold text-gray-900">Nivo 1</h3>
+                        <span class="bg-red-100 text-red-800 text-xs font-semibold px-2.5 py-0.5 rounded">❌ Obavještavanje</span>
+                    </div>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start"><i class="fas fa-times text-red-500 mt-1 mr-2"></i> Samo navodi činjenice</li>
+                        <li class="flex items-start"><i class="fas fa-times text-red-500 mt-1 mr-2"></i> Datum + vrijeme + link</li>
+                        <li class="flex items-start"><i class="fas fa-times text-red-500 mt-1 mr-2"></i> Bez emocije</li>
+                    </ul>
+                    <div class="mt-6 p-4 bg-gray-50 rounded-lg border border-gray-200">
+                        <p class="text-sm text-gray-500 italic">"Djeluje kao podsjetnik u kalendaru"</p>
+                    </div>
+                </div>
+                <div class="level-card bg-white rounded-2xl shadow-lg p-8 border-t-4 border-yellow-500 cursor-pointer" onclick="setActiveLevel(2)">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-xl font-bold text-gray-900">Nivo 2</h3>
+                        <span class="bg-yellow-100 text-yellow-800 text-xs font-semibold px-2.5 py-0.5 rounded">⚠️ Objasniti</span>
+                    </div>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start"><i class="fas fa-minus text-yellow-500 mt-1 mr-2"></i> Dodaje detalje i kredencijale</li>
+                        <li class="flex items-start"><i class="fas fa-minus text-yellow-500 mt-1 mr-2"></i> Nabrajate šta ćete naučiti</li>
+                        <li class="flex items-start"><i class="fas fa-minus text-yellow-500 mt-1 mr-2"></i> Logično, ne emocionalno</li>
+                    </ul>
+                    <div class="mt-6 p-4 bg-gray-50 rounded-lg border border-gray-200">
+                        <p class="text-sm text-gray-500 italic">"Djeluje kao brošura"</p>
+                    </div>
+                </div>
+                <div class="level-card active bg-white rounded-2xl shadow-lg p-8 border-t-4 border-green-500 cursor-pointer" onclick="setActiveLevel(3)">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-xl font-bold text-gray-900">Nivo 3</h3>
+                        <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded">✅ Promoviranje</span>
+                    </div>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i> Prenosi emociju</li>
+                        <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i> Stvara želju i hitnost</li>
+                        <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i> Neprisustvo čini GUBITKOM</li>
+                    </ul>
+                    <div class="mt-6 p-4 bg-gray-50 rounded-lg border border-gray-200">
+                        <p class="text-sm text-gray-500 italic">"Djeluje kao da vam prijatelj priča"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="formula" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">P.U.L.L. Formula</h2>
+                <p class="mt-4 text-xl text-gray-500">Četiri koraka do neodoljivog sadržaja</p>
+            </div>
+            <div class="space-y-8">
+                <div class="flex flex-col md:flex-row bg-blue-50 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+                    <div class="md:w-1/4 bg-blue-600 p-8 flex items-center justify-center">
+                        <div class="text-center">
+                            <div class="text-5xl font-black text-white mb-2">P</div>
+                            <div class="text-blue-100 font-semibold">Personal Hook</div>
+                        </div>
+                    </div>
+                    <div class="md:w-3/4 p-8">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Lični Dodatak</h3>
+                        <p class="text-gray-600 mb-4">Otvorite s ljudskim trenutkom koji je vaš čitalac DOŽIVIO. <strong>NULA detalja o događaju u prvih 2-3 reda.</strong></p>
+                        <div class="bg-white p-4 rounded-lg border-l-4 border-blue-400">
+                            <p class="text-sm text-gray-500 font-semibold mb-2">STARTER FRAZE:</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-gray-100 rounded-full text-sm text-gray-700">"Nekad sam..."</span>
+                                <span class="px-3 py-1 bg-gray-100 rounded-full text-sm text-gray-700">"Jeste li ikad...?"</span>
+                                <span class="px-3 py-1 bg-gray-100 rounded-full text-sm text-gray-700">"Niko vam ovo ne kaže, ali..."</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row bg-orange-50 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+                    <div class="md:w-1/4 bg-orange-500 p-8 flex items-center justify-center">
+                        <div class="text-center">
+                            <div class="text-5xl font-black text-white mb-2">U</div>
+                            <div class="text-orange-100 font-semibold">Urgency</div>
+                        </div>
+                    </div>
+                    <div class="md:w-3/4 p-8">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Hitnost</h3>
+                        <p class="text-gray-600 mb-4">Proširite jaz. Neka čitalac osjeti cijenu neaktivnosti ILI privlačnost mogućnosti. <strong>Bazirano na boli ili želji.</strong></p>
+                        <div class="bg-white p-4 rounded-lg border-l-4 border-orange-400">
+                            <p class="text-sm text-gray-500 font-semibold mb-2">STARTER FRAZE:</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-gray-100 rounded-full text-sm text-gray-700">"Svake sedmice dok ovo ne riješite..."</span>
+                                <span class="px-3 py-1 bg-gray-100 rounded-full text-sm text-gray-700">"Zamislite da zatvorite svoj sljedeći poziv..."</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row bg-purple-50 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+                    <div class="md:w-1/4 bg-purple-600 p-8 flex items-center justify-center">
+                        <div class="text-center">
+                            <div class="text-5xl font-black text-white mb-2">L</div>
+                            <div class="text-purple-100 font-semibold">Legitimize</div>
+                        </div>
+                    </div>
+                    <div class="md:w-3/4 p-8">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Legitimizacija</h3>
+                        <p class="text-gray-600 mb-4">Predstavite govornika/događaj kroz PRIČU O TRANSFORMACIJI, ne biografiju. <strong>Pokažite kredibilitet kroz trenutak.</strong></p>
+                        <div class="bg-white p-4 rounded-lg border-l-4 border-purple-400">
+                            <p class="text-sm text-gray-500 font-semibold mb-2">STARTER FRAZE:</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-gray-100 rounded-full text-sm text-gray-700">"Gledao sam kako [ime] radi X i..."</span>
+                                <span class="px-3 py-1 bg-gray-100 rounded-full text-sm text-gray-700">"Ono što mi je [ime] pokazao promijenilo je..."</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row bg-green-50 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+                    <div class="md:w-1/4 bg-green-600 p-8 flex items-center justify-center">
+                        <div class="text-center">
+                            <div class="text-5xl font-black text-white mb-2">L</div>
+                            <div class="text-green-100 font-semibold">Link + Reason</div>
+                        </div>
+                    </div>
+                    <div class="md:w-3/4 p-8">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Link + Razlog</h3>
+                        <p class="text-gray-600 mb-4">Nemojte samo ostaviti link. Dajte lični RAZLOG za klik SADA. <strong>Neka poziv na akciju bude ličan.</strong></p>
+                        <div class="bg-white p-4 rounded-lg border-l-4 border-green-400">
+                            <p class="text-sm text-gray-500 font-semibold mb-2">STARTER FRAZE:</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-gray-100 rounded-full text-sm text-gray-700">"Dijelim ovo jer želim..."</span>
+                                <span class="px-3 py-1 bg-gray-100 rounded-full text-sm text-gray-700">"Ako ste ikad [bol], ovo je to."</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="generator" class="py-20 bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-extrabold sm:text-4xl">Generator Promotivnog Sadržaja</h2>
+                <p class="mt-4 text-xl text-gray-400">Popunite polja ispod da kreirate vaš P.U.L.L. post</p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div class="space-y-6">
+                    <div class="bg-gray-800 p-6 rounded-xl border border-gray-700">
+                        <h3 class="text-lg font-semibold mb-4 text-blue-400"><i class="fas fa-info-circle mr-2"></i>Detalji Događaja</h3>
+                        <div class="grid grid-cols-1 gap-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-400 mb-1">Naziv Događaja</label>
+                                <input type="text" id="eventName" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-2 text-white focus:ring-2 focus:ring-blue-500 outline-none" placeholder="npr. Masterclass o Prodaji">
+                            </div>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-400 mb-1">Datum</label>
+                                    <input type="text" id="eventDate" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-2 text-white focus:ring-2 focus:ring-blue-500 outline-none" placeholder="npr. 25. Mart">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-400 mb-1">Vrijeme</label>
+                                    <input type="text" id="eventTime" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-2 text-white focus:ring-2 focus:ring-blue-500 outline-none" placeholder="npr. 19:00">
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-400 mb-1">Link za Prijavu</label>
+                                <input type="text" id="eventLink" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-2 text-white focus:ring-2 focus:ring-blue-500 outline-none" placeholder="https://...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-xl border border-gray-700">
+                        <h3 class="text-lg font-semibold mb-4 text-blue-400"><i class="fas fa-pen-fancy mr-2"></i>P.U.L.L. Elementi</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-300 mb-1">P - Lični Dodatak (Priča)</label>
+                                <textarea id="inputP" rows="3" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-2 text-white focus:ring-2 focus:ring-blue-500 outline-none" placeholder="Nekad sam bio toliko nervozan pred prodajnim pozivima da bih odgađao cijeli dan..."></textarea>
+                                <p class="text-xs text-gray-500 mt-1">Bez detalja o događaju, samo emocija.</p>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-300 mb-1">U - Hitnost (Bol ili Želja)</label>
+                                <textarea id="inputU" rows="3" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-2 text-white focus:ring-2 focus:ring-blue-500 outline-none" placeholder="Svaki dan koji prođe bez ovih vještina, gubite potencijalne klijente..."></textarea>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-300 mb-1">L - Legitimizacija (Trenutak)</label>
+                                <textarea id="inputL1" rows="3" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-2 text-white focus:ring-2 focus:ring-blue-500 outline-none" placeholder="Gledao sam kako je Amir promijenio svoj pristup i za 30 dana udvostručio prihode..."></textarea>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-300 mb-1">L - Link + Lični Razlog</label>
+                                <textarea id="inputL2" rows="2" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-2 text-white focus:ring-2 focus:ring-blue-500 outline-none" placeholder="Dijelim ovo jer želim da i vi osjetite olakšanje koje sam ja osjetio..."></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <div class="bg-white text-gray-800 rounded-xl shadow-2xl overflow-hidden flex-grow">
+                        <div class="bg-gray-100 px-4 py-3 border-b border-gray-200 flex items-center justify-between">
+                            <div class="flex space-x-2">
+                                <div class="w-3 h-3 rounded-full bg-red-400"></div>
+                                <div class="w-3 h-3 rounded-full bg-yellow-400"></div>
+                                <div class="w-3 h-3 rounded-full bg-green-400"></div>
+                            </div>
+                            <span class="text-xs text-gray-500 font-medium">Pregled Objave</span>
+                        </div>
+                        <div class="p-8 min-h-[400px] bg-white">
+                            <div id="previewContent" class="prose max-w-none">
+                                <p class="text-gray-400 italic text-center mt-20">Vaš sadržaj će se pojaviti ovdje...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- FIX: replaced alert() with inline button feedback -->
+                    <button id="copyBtn" onclick="copyToClipboard()" class="mt-4 w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition flex items-center justify-center">
+                        <i class="fas fa-copy mr-2"></i> Kopiraj Tekst
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-2xl shadow-xl border border-gray-200 overflow-hidden">
+                <div class="bg-gray-900 px-6 py-4 flex justify-between items-center">
+                    <h3 class="text-xl font-bold text-white">Finalna Provjera</h3>
+                    <span id="scoreDisplay" class="text-2xl font-bold text-blue-400">0/6</span>
+                </div>
+                <div class="p-6 space-y-4">
+                    <label class="checkbox-wrapper flex items-center justify-between cursor-pointer group">
+                        <span class="text-gray-700 group-hover:text-blue-600 transition">Da li prvi red natjera nekoga da PRESTANE skrolovati?</span>
+                        <div class="relative">
+                            <input type="checkbox" class="peer sr-only" onchange="updateScore()">
+                            <div class="w-6 h-6 border-2 border-gray-300 rounded flex items-center justify-center transition peer-checked:border-green-500 peer-checked:bg-green-500">
+                                <svg class="w-4 h-4 text-white hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                            </div>
+                        </div>
+                    </label>
+                    <div class="border-t border-gray-100"></div>
+                    <label class="checkbox-wrapper flex items-center justify-between cursor-pointer group">
+                        <span class="text-gray-700 group-hover:text-blue-600 transition">Da li su prva 3 reda 100% o ČITAOCU (ne o događaju)?</span>
+                        <div class="relative">
+                            <input type="checkbox" class="peer sr-only" onchange="updateScore()">
+                            <div class="w-6 h-6 border-2 border-gray-300 rounded flex items-center justify-center transition peer-checked:border-green-500 peer-checked:bg-green-500">
+                                <svg class="w-4 h-4 text-white hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                            </div>
+                        </div>
+                    </label>
+                    <div class="border-t border-gray-100"></div>
+                    <label class="checkbox-wrapper flex items-center justify-between cursor-pointer group">
+                        <span class="text-gray-700 group-hover:text-blue-600 transition">Da li neprisustvo čini GUBITKOM?</span>
+                        <div class="relative">
+                            <input type="checkbox" class="peer sr-only" onchange="updateScore()">
+                            <div class="w-6 h-6 border-2 border-gray-300 rounded flex items-center justify-center transition peer-checked:border-green-500 peer-checked:bg-green-500">
+                                <svg class="w-4 h-4 text-white hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                            </div>
+                        </div>
+                    </label>
+                    <div class="border-t border-gray-100"></div>
+                    <label class="checkbox-wrapper flex items-center justify-between cursor-pointer group">
+                        <span class="text-gray-700 group-hover:text-blue-600 transition">Da li je govornik predstavljen kroz TRENUTAK, ne biografiju?</span>
+                        <div class="relative">
+                            <input type="checkbox" class="peer sr-only" onchange="updateScore()">
+                            <div class="w-6 h-6 border-2 border-gray-300 rounded flex items-center justify-center transition peer-checked:border-green-500 peer-checked:bg-green-500">
+                                <svg class="w-4 h-4 text-white hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                            </div>
+                        </div>
+                    </label>
+                    <div class="border-t border-gray-100"></div>
+                    <label class="checkbox-wrapper flex items-center justify-between cursor-pointer group">
+                        <span class="text-gray-700 group-hover:text-blue-600 transition">Da li postoji ličan RAZLOG za kliknuti link?</span>
+                        <div class="relative">
+                            <input type="checkbox" class="peer sr-only" onchange="updateScore()">
+                            <div class="w-6 h-6 border-2 border-gray-300 rounded flex items-center justify-center transition peer-checked:border-green-500 peer-checked:bg-green-500">
+                                <svg class="w-4 h-4 text-white hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                            </div>
+                        </div>
+                    </label>
+                    <div class="border-t border-gray-100"></div>
+                    <label class="checkbox-wrapper flex items-center justify-between cursor-pointer group">
+                        <span class="text-gray-700 group-hover:text-blue-600 transition">Da li biste VI stali i pročitali ovo?</span>
+                        <div class="relative">
+                            <input type="checkbox" class="peer sr-only" onchange="updateScore()">
+                            <div class="w-6 h-6 border-2 border-gray-300 rounded flex items-center justify-center transition peer-checked:border-green-500 peer-checked:bg-green-500">
+                                <svg class="w-4 h-4 text-white hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+                <div id="scoreMessage" class="px-6 py-4 bg-gray-50 text-center text-sm font-medium text-gray-600 border-t border-gray-200">
+                    Označite sve tačne stavke da vidite rezultat.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-12 border-t border-gray-800">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <i class="fas fa-quote-left text-4xl text-blue-600 mb-6 opacity-50"></i>
+            <p class="text-2xl font-serif italic text-gray-300 mb-6">"Vi niste kalendar. Vi niste brošura. Vi ste netko tko natjera ljude da nešto osjećaju."</p>
+            <div class="mt-8 text-gray-500 text-sm">P.U.L.L. Sistem © 2026. Sva prava zadržana.</div>
+        </div>
+    </footer>
+
+    <script>
+        function setActiveLevel(level) {
+            document.querySelectorAll('.level-card').forEach((card, index) => {
+                card.classList.toggle('active', index + 1 === level);
+            });
+        }
+
+        ['inputP', 'inputU', 'inputL1', 'inputL2', 'eventName', 'eventDate', 'eventTime', 'eventLink']
+            .forEach(id => document.getElementById(id).addEventListener('input', updatePreview));
+
+        function updatePreview() {
+            const p    = document.getElementById('inputP').value;
+            const u    = document.getElementById('inputU').value;
+            const l1   = document.getElementById('inputL1').value;
+            const l2   = document.getElementById('inputL2').value;
+            const name = document.getElementById('eventName').value;
+            const date = document.getElementById('eventDate').value;
+            const time = document.getElementById('eventTime').value;
+            const link = document.getElementById('eventLink').value;
+
+            let html = '';
+
+            if (p)  html += `<p class="mb-4 text-lg leading-relaxed text-gray-800">${p}</p>`;
+            if (u)  html += `<p class="mb-4 text-lg leading-relaxed text-gray-800 font-medium">${u}</p>`;
+            if (l1) html += `<p class="mb-4 text-lg leading-relaxed text-gray-800">${l1}</p>`;
+
+            if (name || date || time) {
+                html += `<div class="my-6 p-4 bg-blue-50 rounded-lg border-l-4 border-blue-500">`;
+                if (name) html += `<p class="font-bold text-blue-900 text-lg">${name}</p>`;
+                if (date && time) html += `<p class="text-blue-700"><i class="far fa-calendar-alt mr-2"></i>${date} u ${time}</p>`;
+                else if (date)   html += `<p class="text-blue-700"><i class="far fa-calendar-alt mr-2"></i>${date}</p>`;
+                html += `</div>`;
+            }
+
+            if (l2) html += `<p class="mb-4 text-lg leading-relaxed text-gray-800">${l2}</p>`;
+
+            if (link) {
+                html += `<a href="${link}" class="inline-block mt-2 px-6 py-3 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 transition">Prijavi se ovdje <i class="fas fa-arrow-right ml-2"></i></a>`;
+                html += `<p class="mt-2 text-sm text-gray-500 break-all">${link}</p>`;
+            }
+
+            if (!html) html = '<p class="text-gray-400 italic text-center mt-20">Vaš sadržaj će se pojaviti ovdje...</p>';
+
+            document.getElementById('previewContent').innerHTML = html;
+        }
+
+        function updateScore() {
+            const checkboxes = document.querySelectorAll('.checkbox-wrapper input');
+            let checked = 0;
+            checkboxes.forEach(cb => { if (cb.checked) checked++; });
+
+            document.getElementById('scoreDisplay').innerText = `${checked}/6`;
+
+            const msg = document.getElementById('scoreMessage');
+
+            // FIX: reset to neutral message when nothing is checked
+            if (checked === 0) {
+                msg.innerHTML = 'Označite sve tačne stavke da vidite rezultat.';
+                msg.className = 'px-6 py-4 bg-gray-50 text-center text-sm font-medium text-gray-600 border-t border-gray-200';
+            } else if (checked === 6) {
+                msg.innerHTML = '<span class="text-green-600 font-bold text-lg"><i class="fas fa-check-circle mr-2"></i>Spremno za objavu!</span>';
+                msg.className = 'px-6 py-4 bg-green-50 text-center border-t border-green-200';
+            } else if (checked >= 4) {
+                msg.innerHTML = '<span class="text-yellow-600 font-bold">Skoro pa! Prepravite detalje.</span>';
+                msg.className = 'px-6 py-4 bg-yellow-50 text-center border-t border-yellow-200';
+            } else {
+                msg.innerHTML = '<span class="text-red-600 font-bold">Ispod 4. Počnite ispočetka s P.U.L.L.</span>';
+                msg.className = 'px-6 py-4 bg-red-50 text-center border-t border-red-200';
+            }
+        }
+
+        // FIX: replaced alert() with inline button state feedback
+        function copyToClipboard() {
+            const content = document.getElementById('previewContent').innerText;
+            const btn = document.getElementById('copyBtn');
+            navigator.clipboard.writeText(content).then(() => {
+                btn.innerHTML = '<i class="fas fa-check mr-2"></i> Kopirano!';
+                btn.classList.replace('bg-blue-600', 'bg-green-600');
+                btn.classList.replace('hover:bg-blue-700', 'hover:bg-green-700');
+                setTimeout(() => {
+                    btn.innerHTML = '<i class="fas fa-copy mr-2"></i> Kopiraj Tekst';
+                    btn.classList.replace('bg-green-600', 'bg-blue-600');
+                    btn.classList.replace('hover:bg-green-700', 'hover:bg-blue-700');
+                }, 2000);
+            });
+        }
+    </script>
+</body>
+</html>
